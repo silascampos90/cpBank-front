@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Header title="cpBank"
-      :hideUserDropdown="false"/>
-    <Menu />
+      :hideUserDropdown="!user"/>
+    <Menu v-if="user"/>
     <Content />
     <Footer />
   </div>
@@ -13,6 +13,7 @@ import Header from './components/template/Header'
 import Content from './components/template/Content'
 import Footer from './components/template/Footer'
 import Menu from './components/template/Menu'
+import { mapState } from 'vuex'
 export default {
   name: 'App',
   components: {
@@ -20,7 +21,8 @@ export default {
     Menu,
     Content,
     Footer    
-  }
+  },
+  computed: mapState(['user'])
 }
 </script>
 

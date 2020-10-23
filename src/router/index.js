@@ -5,6 +5,7 @@ import About from '../views/About.vue'
 import Extrato from '../components/extrato/Extrato'
 import Deposito from '../components/deposito/Deposito'
 import Saque from '../components/saque/Saque'
+import Auth from '../components/auth/auth'
 
 Vue.use(VueRouter)
 
@@ -17,6 +18,11 @@ const routes = [{
         path: '/extrato',
         name: 'Extrato',
         component: Extrato
+    },
+    {
+        path: '/auth',
+        name: 'Login',
+        component: Auth
     },
     {
         path: '/deposito',

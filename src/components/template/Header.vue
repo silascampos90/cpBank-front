@@ -6,7 +6,7 @@
       <h1 class="title">
           {{ title }}
       </h1>   
-      <UserDropDown />
+      <UserDropDown v-if="!hideUserDropdown"/>
   </header>
 </template>
 

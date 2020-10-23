@@ -1,7 +1,7 @@
 <template>
   <div class="user-dropdown">
       <div class="user-button">
-          <span class="d-none d-sm-block"> Silas </span>
+          <span class="d-none d-sm-block"> {{ user }} </span>
           <div class="user-dropdown-img">
               <Gravatar  alt="User"/>
           </div>
