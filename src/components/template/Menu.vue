@@ -20,7 +20,7 @@ export default {
     methods:{
         dashboard () {
             this.$router.push({
-                name: 'home'
+                name: 'Home'
             });
         },
         saque () {
