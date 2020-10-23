@@ -27,10 +27,9 @@ export default {
     methods: {
         signin() {
             axios.post(`${baseApiUrl}/auth/login`, this.user)
-                .then(res => {
-                    
+                .then(res => {                    
                     this.$store.commit('setUser', res.data)
-                    localStorage.setItem(userKey, JSON.stringify(res.data))
+                    localStorage.setItem(userKey, JSON.stringify(res.data.data))
                     this.$router.push({ path: '/' })
                 })
                 .catch(showError)

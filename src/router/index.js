@@ -26,7 +26,7 @@ const routes = [{
     },
     {
         path: '/deposito',
-        name: 'Depósito',
+        name: 'Deposito',
         component: Deposito
     },
     {

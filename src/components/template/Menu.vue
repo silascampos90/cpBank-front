@@ -1,15 +1,44 @@
 <template>
   <aside class="menu">
-      <a class="menu-button" href="/">Dashboard</a>
-      <a class="menu-button" href="/saque">Realizar Saque</a>
-      <a class="menu-button" href="/deposito">Realizar Depósito</a>
-      <a class="menu-button" href="/extrato">Extrato</a>
+      <a href @click.prevent="dashboard" class="menu-button">Dashboard</a>
+      <a href @click.prevent="saque" class="menu-button">Saque</a>
+      <a href @click.prevent="deposito" class="menu-button">Depósito</a>
+      <a href @click.prevent="extrato" class="menu-button">Extrato</a>
   </aside>
 </template>
 
 <script>
 export default {
-    name: 'Menu'
+    data () {
+        return {
+            
+        }
+    },
+    async mounted () {
+    
+    },
+    methods:{
+        dashboard () {
+            this.$router.push({
+                name: 'home'
+            });
+        },
+        saque () {
+            this.$router.push({
+                name: 'Saque'
+            });
+        },
+        deposito () {
+            this.$router.push({
+                name: 'Deposito'
+            });
+        },
+        extrato () {
+            this.$router.push({
+                name: 'Extrato'
+            });
+        }
+    }
 }
 </script>
 

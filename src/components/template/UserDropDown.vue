@@ -2,14 +2,14 @@
 <template>
     <div class="user-dropdown">
         <div class="user-button">
-            <span class="d-none d-sm-block">{{ user.nome }}</span>
+            <span class="d-none d-sm-block">{{ user.nome}}</span>
             <div class="user-dropdown-img">
                 <Gravatar :email="user.nome" alt="User" />
             </div>
             <i class="fa fa-angle-down"></i>
         </div>
         <div class="user-dropdown-content">
-            <router-link to="/" v-if="user.nome">
+            <router-link to="/" v-if="user">
                 <i class="fa fa-cogs"></i> Conta
             </router-link>
             <a href @click.prevent="logout"><i class="fa fa-sign-out"></i> Sair</a>
