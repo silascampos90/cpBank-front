@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../components/home/Home'
 import About from '../views/About.vue'
 import Extrato from '../components/extrato/Extrato'
+import Deposito from '../components/deposito/Deposito'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [{
         path: '/extrato',
         name: 'Extrato',
         component: Extrato
+    },
+    {
+        path: '/deposito',
+        name: 'Depósito',
+        component: Deposito
     },
     {
         path: '/about',
