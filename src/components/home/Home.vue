@@ -1,9 +1,9 @@
 <template>
     <div class="home">
         <PageTitle icon="fa fa-home" main="Dashboard"
-            sub="Base de Conhecimento" />
+            sub="Bem vindo" /> 
         <div class="stats">
-            <Stat title="Conta" :value="stat.data.valor "
+            <Stat title="Conta" :value="stat.data.saldo "
                 icon="fa fa-folder" color="#d54d50" />
             <Stat title="Saldo" :value="'R$ '+stat.data.saldo"
                 icon="fa fa-file" color="#3bc480" />
@@ -25,12 +25,12 @@ export default {
         }
     },
     methods: {
-        getStats() {
+        getSaldo() {
             axios.get(`${baseApiUrl}/transacao/saldo`).then(res => this.stat = res.data)
         }
     },
     mounted() {
-        this.getStats()
+        this.getSaldo()
     }
 }
 </script>

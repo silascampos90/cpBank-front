@@ -5,8 +5,7 @@
             <img src="@/assets/logo.png" width="200" alt="Logo" />
             <hr>
             <div class="auth-title">Login</div>
-
-            <input v-model="user.cpf" name="email" type="text" placeholder="CPF">
+            <input v-model="user.cpf" name="cpf" type="text" placeholder="CPF">
             <input v-model="user.password" name="password" type="password" placeholder="Senha">            
             <button @click="signin">Entrar</button>
           
@@ -29,7 +28,8 @@ export default {
         signin() {
             axios.post(`${baseApiUrl}/auth/login`, this.user)
                 .then(res => {
-                    this.$store.commit('setUser', res.data)
+                    console.log(res.data.data);
+                    this.$store.commit('setUser', res.data.data)
                     localStorage.setItem(userKey, JSON.stringify(res.data))
                     this.$router.push({ path: '/' })
                 })
@@ -40,6 +40,7 @@ export default {
 </script>
 
 <style>
+
     .auth-content {
         height: 100%;
         display: flex;

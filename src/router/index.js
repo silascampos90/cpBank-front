@@ -21,7 +21,7 @@ const routes = [{
     },
     {
         path: '/auth',
-        name: 'Login',
+        name: 'auth',
         component: Auth
     },
     {
