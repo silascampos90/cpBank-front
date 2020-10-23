@@ -4,6 +4,7 @@ import Home from '../components/home/Home'
 import About from '../views/About.vue'
 import Extrato from '../components/extrato/Extrato'
 import Deposito from '../components/deposito/Deposito'
+import Saque from '../components/saque/Saque'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [{
         path: '/deposito',
         name: 'Depósito',
         component: Deposito
+    },
+    {
+        path: '/saque',
+        name: 'Saque',
+        component: Saque
     },
     {
         path: '/about',
