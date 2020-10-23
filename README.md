@@ -1,24 +1,21 @@
-# cpbank-front
+Após o clone acessar a pasta e executar:
 
-## Project setup
+## atualizar dependências
 ```
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
+# contas padrão
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Conta 1
+  CPF: 85257346591
+  Senha: 123456
+  
+Conta 2
+  CPF: 13101797004
+  Senha: 123456
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Acessar
+http://localhost:8080/auth
