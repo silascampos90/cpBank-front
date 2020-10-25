@@ -1,14 +1,16 @@
 Após o clone acessar a pasta e executar:
 
-## atualizar dependências
+### Atualizar dependências
 ```
 npm install
 
 npm run serve
 ```
-# contas padrão
+### contas padrão
 
-Conta 1
+#### Conta 1
+
+   Agência:  0001
   
   Conta: 0234
 
@@ -16,13 +18,13 @@ Conta 1
   
   Senha: 123456
   
-Conta 2
+#### Conta 2
 
-  Conta: 0894
-  
+  Agência: 0001
 
-  CPF: 13101797004
-  
+  Conta: 0894  
+
+  CPF: 13101797004  
   
   Senha: 123456
 
